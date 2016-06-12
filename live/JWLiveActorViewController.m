@@ -11,6 +11,7 @@
 
 @interface JWLiveActorViewController()<AVCaptureVideoDataOutputSampleBufferDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *previewView;
 @property (strong, nonatomic) AVCaptureSession *captureSession;
 
 @end
@@ -67,9 +68,9 @@
     
     // preview
     AVCaptureVideoPreviewLayer *videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
-    videoPreviewLayer.frame = self.view.bounds;
+    videoPreviewLayer.frame = [UIScreen mainScreen].bounds;
     videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspect;
-    [self.view.layer addSublayer:videoPreviewLayer];
+    [self.previewView.layer addSublayer:videoPreviewLayer];
     
     [self.captureSession startRunning];
 }

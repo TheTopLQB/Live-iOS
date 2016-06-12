@@ -8,6 +8,13 @@
 
 #import "JWLiveAudienceViewController.h"
 
+@interface JWLiveAudienceViewController()
+
+@property (weak, nonatomic) IBOutlet UIView *playerView;
+
+
+@end
+
 @implementation JWLiveAudienceViewController
 
 @end
