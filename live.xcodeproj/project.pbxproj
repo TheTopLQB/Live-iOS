@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		779C660A25EC410200138802 /* libPods-live.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAEB87EBE3E86D93EF28BF2 /* libPods-live.a */; };
 		EC7FCCCE1D0D3AD40003948D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCCD1D0D3AD40003948D /* main.m */; };
 		EC7FCCD11D0D3AD40003948D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCD01D0D3AD40003948D /* AppDelegate.m */; };
 		EC7FCCD71D0D3AD40003948D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCCD51D0D3AD40003948D /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ACAEB87EBE3E86D93EF28BF2 /* libPods-live.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-live.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B02D438DF93E0A9D764DB7 /* Pods-live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-live.release.xcconfig"; path = "Pods/Target Support Files/Pods-live/Pods-live.release.xcconfig"; sourceTree = "<group>"; };
 		EC7FCCC91D0D3AD40003948D /* live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = live.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7FCCCD1D0D3AD40003948D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC7FCCCF1D0D3AD40003948D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		EC7FCCE61D0D3BA30003948D /* JWLiveAudienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLiveAudienceViewController.h; sourceTree = "<group>"; };
 		EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLiveAudienceViewController.m; sourceTree = "<group>"; };
 		EC7FCCEB1D0D3F930003948D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FFCF05DC257C5657C821F81D /* Pods-live.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-live.debug.xcconfig"; path = "Pods/Target Support Files/Pods-live/Pods-live.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC7FCCEC1D0D3F930003948D /* AVFoundation.framework in Frameworks */,
+				779C660A25EC410200138802 /* libPods-live.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02E2A069ED30A9E32A05344C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACAEB87EBE3E86D93EF28BF2 /* libPods-live.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0414947AB05EB778A42B4F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFCF05DC257C5657C821F81D /* Pods-live.debug.xcconfig */,
+				D8B02D438DF93E0A9D764DB7 /* Pods-live.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC7FCCC01D0D3AD40003948D = {
 			isa = PBXGroup;
 			children = (
 				EC7FCCCB1D0D3AD40003948D /* live */,
 				EC7FCCCA1D0D3AD40003948D /* Products */,
+				C0414947AB05EB778A42B4F6 /* Pods */,
+				02E2A069ED30A9E32A05344C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC7FCCE01D0D3AD40003948D /* Build configuration list for PBXNativeTarget "live" */;
 			buildPhases = (
+				49B1161AB829300BA07218FE /* 📦 Check Pods Manifest.lock */,
 				EC7FCCC51D0D3AD40003948D /* Sources */,
 				EC7FCCC61D0D3AD40003948D /* Frameworks */,
 				EC7FCCC71D0D3AD40003948D /* Resources */,
+				9D62BBE73982B5233D58F6A5 /* 📦 Embed Pods Frameworks */,
+				203920F94D1327429AB17DA2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		203920F94D1327429AB17DA2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-live/Pods-live-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49B1161AB829300BA07218FE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D62BBE73982B5233D58F6A5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-live/Pods-live-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC7FCCC51D0D3AD40003948D /* Sources */ = {
@@ -287,6 +362,7 @@
 		};
 		EC7FCCE11D0D3AD40003948D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCF05DC257C5657C821F81D /* Pods-live.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = live/Info.plist;
@@ -298,6 +374,7 @@
 		};
 		EC7FCCE21D0D3AD40003948D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B02D438DF93E0A9D764DB7 /* Pods-live.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = live/Info.plist;
