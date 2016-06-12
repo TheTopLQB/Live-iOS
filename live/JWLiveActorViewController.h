@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JWLiveActorViewController.h
 //  live
 //
 //  Created by Jungle Wind on 6/12/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JWLiveActorViewController : UIViewController
 
 @end
-

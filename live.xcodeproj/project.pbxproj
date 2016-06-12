@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		EC7FCCCE1D0D3AD40003948D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCCD1D0D3AD40003948D /* main.m */; };
 		EC7FCCD11D0D3AD40003948D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCD01D0D3AD40003948D /* AppDelegate.m */; };
-		EC7FCCD41D0D3AD40003948D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCD31D0D3AD40003948D /* ViewController.m */; };
 		EC7FCCD71D0D3AD40003948D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCCD51D0D3AD40003948D /* Main.storyboard */; };
 		EC7FCCD91D0D3AD40003948D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCCD81D0D3AD40003948D /* Assets.xcassets */; };
 		EC7FCCDC1D0D3AD40003948D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCCDA1D0D3AD40003948D /* LaunchScreen.storyboard */; };
+		EC7FCCE51D0D3B880003948D /* JWLiveActorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCE41D0D3B880003948D /* JWLiveActorViewController.m */; };
+		EC7FCCE81D0D3BA30003948D /* JWLiveAudienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		EC7FCCCD1D0D3AD40003948D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC7FCCCF1D0D3AD40003948D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC7FCCD01D0D3AD40003948D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC7FCCD21D0D3AD40003948D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC7FCCD31D0D3AD40003948D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EC7FCCD61D0D3AD40003948D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC7FCCD81D0D3AD40003948D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7FCCDB1D0D3AD40003948D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7FCCDD1D0D3AD40003948D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7FCCE31D0D3B880003948D /* JWLiveActorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLiveActorViewController.h; sourceTree = "<group>"; };
+		EC7FCCE41D0D3B880003948D /* JWLiveActorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLiveActorViewController.m; sourceTree = "<group>"; };
+		EC7FCCE61D0D3BA30003948D /* JWLiveAudienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLiveAudienceViewController.h; sourceTree = "<group>"; };
+		EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLiveAudienceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,10 @@
 		EC7FCCCB1D0D3AD40003948D /* live */ = {
 			isa = PBXGroup;
 			children = (
+				EC7FCCE91D0D3BA90003948D /* LiveActor */,
+				EC7FCCEA1D0D3BB50003948D /* LiveAudience */,
 				EC7FCCCF1D0D3AD40003948D /* AppDelegate.h */,
 				EC7FCCD01D0D3AD40003948D /* AppDelegate.m */,
-				EC7FCCD21D0D3AD40003948D /* ViewController.h */,
-				EC7FCCD31D0D3AD40003948D /* ViewController.m */,
 				EC7FCCD51D0D3AD40003948D /* Main.storyboard */,
 				EC7FCCD81D0D3AD40003948D /* Assets.xcassets */,
 				EC7FCCDA1D0D3AD40003948D /* LaunchScreen.storyboard */,
@@ -77,6 +80,24 @@
 				EC7FCCCD1D0D3AD40003948D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC7FCCE91D0D3BA90003948D /* LiveActor */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCCE31D0D3B880003948D /* JWLiveActorViewController.h */,
+				EC7FCCE41D0D3B880003948D /* JWLiveActorViewController.m */,
+			);
+			name = LiveActor;
+			sourceTree = "<group>";
+		};
+		EC7FCCEA1D0D3BB50003948D /* LiveAudience */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCCE61D0D3BA30003948D /* JWLiveAudienceViewController.h */,
+				EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */,
+			);
+			name = LiveAudience;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7FCCD41D0D3AD40003948D /* ViewController.m in Sources */,
 				EC7FCCD11D0D3AD40003948D /* AppDelegate.m in Sources */,
+				EC7FCCE51D0D3B880003948D /* JWLiveActorViewController.m in Sources */,
 				EC7FCCCE1D0D3AD40003948D /* main.m in Sources */,
+				EC7FCCE81D0D3BA30003948D /* JWLiveAudienceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +322,7 @@
 				EC7FCCE21D0D3AD40003948D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
