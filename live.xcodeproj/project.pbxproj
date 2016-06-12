@@ -14,6 +14,7 @@
 		EC7FCCDC1D0D3AD40003948D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FCCDA1D0D3AD40003948D /* LaunchScreen.storyboard */; };
 		EC7FCCE51D0D3B880003948D /* JWLiveActorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCE41D0D3B880003948D /* JWLiveActorViewController.m */; };
 		EC7FCCE81D0D3BA30003948D /* JWLiveAudienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */; };
+		EC7FCCEC1D0D3F930003948D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7FCCEB1D0D3F930003948D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		EC7FCCE41D0D3B880003948D /* JWLiveActorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLiveActorViewController.m; sourceTree = "<group>"; };
 		EC7FCCE61D0D3BA30003948D /* JWLiveAudienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLiveAudienceViewController.h; sourceTree = "<group>"; };
 		EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLiveAudienceViewController.m; sourceTree = "<group>"; };
+		EC7FCCEB1D0D3F930003948D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7FCCEC1D0D3F930003948D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		EC7FCCCC1D0D3AD40003948D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC7FCCEB1D0D3F930003948D /* AVFoundation.framework */,
 				EC7FCCCD1D0D3AD40003948D /* main.m */,
 			);
 			name = "Supporting Files";
