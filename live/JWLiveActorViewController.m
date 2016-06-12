@@ -19,8 +19,18 @@
 @implementation JWLiveActorViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    
     [self startRecording];
 }
+
+#pragma mark - Event Handlers
+
+- (IBAction)endActing:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - Private Methods
 
 - (void)startRecording {
     if ([self.captureSession canSetSessionPreset:AVCaptureSessionPresetHigh]){

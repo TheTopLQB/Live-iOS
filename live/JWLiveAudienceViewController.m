@@ -12,9 +12,19 @@
 
 @property (weak, nonatomic) IBOutlet UIView *playerView;
 
-
 @end
 
 @implementation JWLiveAudienceViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"room id : %@", self.room.roomId);
+}
+
+#pragma mark - Event Handlers
+
+- (IBAction)endWatching:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

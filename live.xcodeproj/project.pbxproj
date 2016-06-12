@@ -16,6 +16,10 @@
 		EC7FCCE51D0D3B880003948D /* JWLiveActorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCE41D0D3B880003948D /* JWLiveActorViewController.m */; };
 		EC7FCCE81D0D3BA30003948D /* JWLiveAudienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */; };
 		EC7FCCEC1D0D3F930003948D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7FCCEB1D0D3F930003948D /* AVFoundation.framework */; };
+		EC7FCCEE1D0D54F30003948D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7FCCED1D0D54F30003948D /* VideoToolbox.framework */; };
+		EC7FCCF31D0D686F0003948D /* JWBrocastingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCF21D0D686F0003948D /* JWBrocastingCell.m */; };
+		EC7FCCF71D0D68FA0003948D /* JWDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCF61D0D68FA0003948D /* JWDashboardViewController.m */; };
+		EC7FCCFB1D0D6A770003948D /* JWRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FCCFA1D0D6A770003948D /* JWRoom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,13 @@
 		EC7FCCE61D0D3BA30003948D /* JWLiveAudienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLiveAudienceViewController.h; sourceTree = "<group>"; };
 		EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLiveAudienceViewController.m; sourceTree = "<group>"; };
 		EC7FCCEB1D0D3F930003948D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC7FCCED1D0D54F30003948D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EC7FCCF11D0D686F0003948D /* JWBrocastingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBrocastingCell.h; sourceTree = "<group>"; };
+		EC7FCCF21D0D686F0003948D /* JWBrocastingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBrocastingCell.m; sourceTree = "<group>"; };
+		EC7FCCF51D0D68FA0003948D /* JWDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDashboardViewController.h; sourceTree = "<group>"; };
+		EC7FCCF61D0D68FA0003948D /* JWDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDashboardViewController.m; sourceTree = "<group>"; };
+		EC7FCCF91D0D6A770003948D /* JWRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRoom.h; sourceTree = "<group>"; };
+		EC7FCCFA1D0D6A770003948D /* JWRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRoom.m; sourceTree = "<group>"; };
 		FFCF05DC257C5657C821F81D /* Pods-live.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-live.debug.xcconfig"; path = "Pods/Target Support Files/Pods-live/Pods-live.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7FCCEE1D0D54F30003948D /* VideoToolbox.framework in Frameworks */,
 				EC7FCCEC1D0D3F930003948D /* AVFoundation.framework in Frameworks */,
 				779C660A25EC410200138802 /* libPods-live.a in Frameworks */,
 			);
@@ -53,6 +65,7 @@
 		02E2A069ED30A9E32A05344C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC7FCCED1D0D54F30003948D /* VideoToolbox.framework */,
 				ACAEB87EBE3E86D93EF28BF2 /* libPods-live.a */,
 			);
 			name = Frameworks;
@@ -88,12 +101,15 @@
 		EC7FCCCB1D0D3AD40003948D /* live */ = {
 			isa = PBXGroup;
 			children = (
+				EC7FCCF81D0D68FF0003948D /* Dashboard */,
 				EC7FCCE91D0D3BA90003948D /* LiveActor */,
 				EC7FCCEA1D0D3BB50003948D /* LiveAudience */,
 				EC7FCCCF1D0D3AD40003948D /* AppDelegate.h */,
 				EC7FCCD01D0D3AD40003948D /* AppDelegate.m */,
 				EC7FCCD51D0D3AD40003948D /* Main.storyboard */,
 				EC7FCCD81D0D3AD40003948D /* Assets.xcassets */,
+				EC7FCCF41D0D68740003948D /* Cells */,
+				EC7FCCFC1D0D6A800003948D /* Models */,
 				EC7FCCDA1D0D3AD40003948D /* LaunchScreen.storyboard */,
 				EC7FCCDD1D0D3AD40003948D /* Info.plist */,
 				EC7FCCCC1D0D3AD40003948D /* Supporting Files */,
@@ -126,6 +142,33 @@
 				EC7FCCE71D0D3BA30003948D /* JWLiveAudienceViewController.m */,
 			);
 			name = LiveAudience;
+			sourceTree = "<group>";
+		};
+		EC7FCCF41D0D68740003948D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCCF11D0D686F0003948D /* JWBrocastingCell.h */,
+				EC7FCCF21D0D686F0003948D /* JWBrocastingCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EC7FCCF81D0D68FF0003948D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCCF51D0D68FA0003948D /* JWDashboardViewController.h */,
+				EC7FCCF61D0D68FA0003948D /* JWDashboardViewController.m */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		EC7FCCFC1D0D6A800003948D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FCCF91D0D6A770003948D /* JWRoom.h */,
+				EC7FCCFA1D0D6A770003948D /* JWRoom.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC7FCCD11D0D3AD40003948D /* AppDelegate.m in Sources */,
+				EC7FCCFB1D0D6A770003948D /* JWRoom.m in Sources */,
 				EC7FCCE51D0D3B880003948D /* JWLiveActorViewController.m in Sources */,
+				EC7FCCF31D0D686F0003948D /* JWBrocastingCell.m in Sources */,
 				EC7FCCCE1D0D3AD40003948D /* main.m in Sources */,
+				EC7FCCF71D0D68FA0003948D /* JWDashboardViewController.m in Sources */,
 				EC7FCCE81D0D3BA30003948D /* JWLiveAudienceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

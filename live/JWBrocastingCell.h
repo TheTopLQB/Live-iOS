@@ -1,5 +1,5 @@
 //
-//  JWLiveAudienceViewController.h
+//  JWBrocastingCell.h
 //  live
 //
 //  Created by Jungle Wind on 6/12/16.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JWRoom.h"
 
-@interface JWLiveAudienceViewController : UIViewController
+@interface JWBrocastingCell : UITableViewCell
 
 @property (weak, nonatomic) JWRoom *room;
 
